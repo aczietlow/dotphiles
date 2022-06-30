@@ -20,6 +20,10 @@
     remote = origin
     merge = refs/heads/master
 
+[branch "main"]
+    remote = origin
+    merge = refs/heads/main
+
 [color]
     branch = always
     diff = always
