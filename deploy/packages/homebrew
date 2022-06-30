@@ -7,28 +7,35 @@
 #    Ben O'Hara <bohara@gmail.com>
 #
 
-
 brew-cask
+
+alfred
+caffeine
 #coreutils
 #htop-osx
 #iftop
 #ipcalc
+#iterm2
 #libevent
 #libnet
 #libtool
 #mtr
 #ncdu
 #nmap
+#openoffice
 #pcre
+#phpstorm
 #pkg-config
 #pv
 #readline
 #reattach-to-user-namespace
+#sketch
+#slack
 ssh-copy-id
 #tcptraceroute
 tmux
 #vnstat
+#virtualbox
 wget
 #xz
 #zsh
-

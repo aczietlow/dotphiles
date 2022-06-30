@@ -49,7 +49,7 @@ function pause(){
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # The required oh my zsh
-curl -L http://install.ohmyz.sh | sh
+#curl -L http://install.ohmyz.sh | sh
 
 ###############################################################################
 # Basic Utilities                                                             #
@@ -69,11 +69,12 @@ xcode-select --install
 
 # Reminder of what's left to be done.
 echo "Now that that's done I need you to:
-1. Add your ssh keys."
+1. Create your ssh keys."
 pause 'Press [Enter] when you have added your ssh key.'
 
 git config --global user.name "Chris Zietlow"
 git config --global user.email aczietlow@gmail.com
+git config --global init.defaultBranch main
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -462,7 +463,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 #defaults write org.x.X11 wm_ffm -bool true
 
 # Install pretty iTerm colors
-open "${HOME}/${DOTFILES}/deploy/terminal/iterm2/dotphiles.itermcolors"
+#open "${HOME}/${DOTFILES}/deploy/terminal/iterm2/dotphiles.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
@@ -528,6 +529,7 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 ###############################################################################
 # Homebrew
 ###############################################################################
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 if [[ -f $DIR/packages/homebrew ]]; then
   exec<$DIR/packages/homebrew
@@ -538,15 +540,6 @@ if [[ -f $DIR/packages/homebrew ]]; then
     fi
   done
 fi
-
-brew cask install alfred
-brew cask install caffeine
-#brew cask install iterm2
-#brew cask install openoffice
-#brew cask install phpstorm
-#brew cask install sketch
-#brew cask install slack
-#brew cask install virtualbox
 
 
 ###############################################################################
