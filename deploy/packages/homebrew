@@ -7,14 +7,9 @@
 #    Ben O'Hara <bohara@gmail.com>
 #
 
-#aacgain
-#autoconf
-#automake
-#bash
+
+brew-cask
 #coreutils
-#ctags
-#gdbm
-#grc
 #htop-osx
 #iftop
 #ipcalc
@@ -29,10 +24,11 @@
 #pv
 #readline
 #reattach-to-user-namespace
+ssh-copy-id
 #tcptraceroute
-#tmux
+tmux
 #vnstat
-#wget
+wget
 #xz
 #zsh
 
