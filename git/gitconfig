@@ -9,9 +9,12 @@
 
 # Global Config
 [user]
-    #name = "**Your Name**"
-    #email = "**Your Email**"
+	name = aczietlow
+	email = aczietlow
     #signingkey = **Your GPG ID**
+
+[init]
+    defaultBranch = main
 
 [branch "master"]
     remote = origin
