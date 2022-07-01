@@ -49,7 +49,7 @@ function pause(){
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # The required oh my zsh
-#curl -L http://install.ohmyz.sh | sh
+curl -L http://install.ohmyz.sh | sh
 
 ###############################################################################
 # Basic Utilities                                                             #
